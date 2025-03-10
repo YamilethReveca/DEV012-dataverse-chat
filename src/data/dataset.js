@@ -81,7 +81,7 @@ export default [
     name: "Nico Robin",
     shortDescription: "Archaeologist and Devil Fruit Knowledge",
     description: "Robin is the enigmatic archaeologist with Devil Fruit knowledge in the Straw Hat Pirates.",
-    imageUrl: "https://cdn.myanimelist.net/images/characters/12/136849.jpg",
+    imageUrl: "https://heraldodemexico.com.mx/u/fotografias/m/2025/2/20/f1456x819-1088644_1259014_5224.png",
     facts: {
       bounty: "130,000,000 Berries",
       status: "Alive",
@@ -197,7 +197,7 @@ export default [
     name: "Eustass Kid",
     shortDescription: "Captain of the Kid Pirates",
     description: "Eustass Kid is the fearsome captain of the Kid Pirates and a user of the 'Jiki Jiki no Mi' Devil Fruit.",
-    imageUrl: "https://cdn.myanimelist.net/images/characters/3/48211.jpg?_gl=1*1gqozdd*_ga*ODUxOTU5MTIzLjE2OTQ3MDUzOTc.*_ga_26FEP9527K*MTY5NjM4NTc4MS4xMS4xLjE2OTYzODYwNzYuNTYuMC4w",
+    imageUrl: "https://i.pinimg.com/736x/69/f8/dc/69f8dc19fdc8211fbd3de234b83490c6.jpg",
     facts: {
       bounty: "315,000,000 Berries",
       status: "Alive",
