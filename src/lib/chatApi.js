@@ -5,7 +5,7 @@ export const characters = dataset.map(element => element.name);
 
 export function openIAapi(characters, userText) {
   const apiKey = localStorage.getItem("apiKey");
-  console.log(apiKey);
+
   const data = {
     model: "gpt-3.5-turbo",
     messages: [
