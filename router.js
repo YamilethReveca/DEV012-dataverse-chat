@@ -23,19 +23,15 @@ const renderView = (pathname, props = {}) => {
 };
 
 export const navigateTo = (pathname, props = {}) => {
-  if (typeof(window) !== 'undefined') {
-    const URLVisited = window.location.origin + pathname;
-    history.pushState({}, "", URLVisited);
-  }
+
+  const URLVisited = window.location.origin + pathname;
+  history.pushState({}, "", URLVisited);
+
   renderView(pathname, props);
 };
 
 export const onURLChange = () => {
-  if (typeof(window) !== 'undefined') {
-    renderView(pathname);
-  }
   const pathname = window.location.pathname
+  renderView(pathname);
 };
-if (typeof(window) !== 'undefined') {
-  window.onpopstate = onURLChange;
-}
+window.onpopstate = onURLChange;
