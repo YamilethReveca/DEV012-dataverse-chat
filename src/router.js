@@ -23,15 +23,19 @@ const renderView = (pathname, props = {}) => {
 };
 
 export const navigateTo = (pathname, props = {}) => {
-    
-  const URLVisited = window.location.origin + pathname;
-  history.pushState({}, "", URLVisited);
-  
+  if (window) {
+    const URLVisited = window.location.origin + pathname;
+    history.pushState({}, "", URLVisited);
+  }
   renderView(pathname, props);
 };
 
 export const onURLChange = () => {
+  if (window) {
+    renderView(pathname);
+  }
   const pathname = window.location.pathname
-  renderView(pathname);
 };
-window.onpopstate = onURLChange;
+if (window) {
+  window.onpopstate = onURLChange;
+}
